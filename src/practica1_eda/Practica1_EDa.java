@@ -38,14 +38,21 @@ public class Practica1_EDa {
             
             System.out.println("Mazo de robo: " + j.getMazoDeRobo());
             System.out.println("Mazo de descartes: " + j.getMazoDeDescartes());
-            System.out.println("Pila de efectos: " + j.getPilaDeEfectos());
+            System.out.print("Pila de efectos: ");
+            for (int i = 0; i < j.getPilaDeEfectos().size();i++){
+                System.out.print(j.getPilaDeEfectos().get(i).getC() + " ");
+            }
         }
         
-        System.out.println("\n[ESTADO FINAL DE LAS PILAS]\n");
+        System.out.println("\n\n[ESTADO FINAL DE LAS PILAS]\n");
         
         System.out.println("Mazo de robo: " + j.getMazoDeRobo());
         System.out.println("Mazo de descartes: " + j.getMazoDeDescartes());
-        System.out.println("Pila de efectos: " + j.getPilaDeEfectos());
+        System.out.println("Pila de efectos: ");
+        for (int i = 0; i < j.getPilaDeEfectos().size();i++){
+            System.out.println("hola");
+            System.out.print(j.getPilaDeEfectos().get(i).getC() + " ");
+        }
         
         acciones.cerrar();
     }
